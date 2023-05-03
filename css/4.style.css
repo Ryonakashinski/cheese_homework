@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.showcase {
+  position: absolute;
+  right: 0;
+  /* left: ; */
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: black;
+  color: white;
+  z-index: 2;
+}
+
+.showcase header {
+}
+
+.toggle {
+  position: relative;
+  /* position: absolute; */
+  width: 60px;
+  height: 60px;
+  background: url("menu.red.png");
+  background-repeat: no-repeat;
+  background-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* display: none; */
+}
+
+.menu {
+  /* display: none; */
+}
+/* body {
+  font-family: Roboto, "Yu Gothic Medium", "游ゴシック Medium", YuGothic,
+    "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  line-height: 1.75;
+  font-size: 16px;
+}
+
+/*　パディングをサイズ内側にする処理　*/
+/* * {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box; }*/
+
+/*ーーーーーーーーーーー*/
+/*この下から記述*/
+/*ーーーーーーーーーーー*/
+
+/*どの部分のcssに対して
+命令をしているのかコメントを
+記載しよう！
+---------------------*/
+
+/*
+---------------------*/
+
+/*
+---------------------*/
+
+/*
+---------------------*/
+
+/*
+---------------------*/

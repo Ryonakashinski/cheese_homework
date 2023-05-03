@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+}
+
+/*　パディングをサイズ内側にする処理　*/
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* 背景を設定する処理 */
+.banner {
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url(img/mainbg.png);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+/* Set the menu */
+.banner_img {
+  width: 85%;
+  margin: 0px;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffffff;
+}
+
+/* Arrange the logo size */
+.logo {
+  width: 120px;
+  background-color: red;
+
+  cursor: pointer;
+}
+
+/* 組むときにBlock要素かinline要素かを意識する */
+/* イメージタグーinline-block */
+.banner_img ul li {
+  list-style: inherit;
+  display: inline-block;
+  /* background-color: red; */
+  /* margin: 0 20px; */
+  margin: 60px;
+  position: relative;
+  list-style: inherit;
+  display: inline-block;
+  /* background-color: red; */
+  margin: 0 20px;
+  position: relative;
+  /* border: 1px solid black; */
+}
+
+.banner_img ul li a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+/* The blue line */
+.banner_img ul li ::after{
+  content:normal;
+  height: 3px;
+  width: 0;
+  background: #009688;
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  transition: 0.5s;
+}
+
+.banner_img ul li:hover::after {
+  width: 100%;
+}
+
+.banner_img ul li a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+/* The blue line */
+.banner_img ul li::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background: #009688;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  transition: 0.5s;
+}
+
+.banner_img ul li:hover::after {
+  width: 100%;
+}
+
+.content {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #fff;
+}
+
+/* Title */
+.content h1 {
+  font-size: 80px;
+  margin-top: 80px;
+}
+
+.content p {
+  margin: 20px auto;
+  font-weight: 500;
+  line-height: 25px;
+}
+
+button {
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #009688;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  /* overflow: hidden; */
+  perspective: 100px;
+  transform: rotateY(20deg);
+}
+
+button span {
+  background: #009688;
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+ 
+}
+button:hover span {
+  width: 100%;
+  
+}
+button:hover {
+  border: none;
+ 
+}
+
+@media(max-width: 700px){
+  
+.content h1 {
+  font-size: 30px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center; 
+}
+.banner_img ul li {
+  
+  margin-top: 20px;
+  
+}
+/* move the logo to the top */
+.logo {
+  position: absolute;
+  top: 30px;
+  left: 0;
+}
+
+/* The menu on the red line */
+.banner_img ul li::after {
+/* what does content for?  */
+  content: "";
+  /* height: 3px; */
+  height: 3px;
+  width: 0;
+  background: #009688;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  transition: 0.5s;
+}
+
+/* wanna adjust the border line  */
+.banner_img ul li:hover::after {
+  width: 100%;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+}
+
+/* the red column  */
+.banner_img {
+  position: fixed;
+  background: #f44336;
+  /* height: 100vh; */
+  height: 100%;
+  width: 130px;
+  top: 0;
+  right: 0;
+  text-align: left;
+  z-index: 1;
+}
+

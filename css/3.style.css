@@ -1,0 +1,77 @@
+/*全体　共通
+最初から設定してあるので特に変更
+しなくても大丈夫です♪
+-----------------*/
+body {
+  font-family: Roboto, "Yu Gothic Medium", "游ゴシック Medium", YuGothic,
+    "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  line-height: 1.75;
+  font-size: 16px;
+}
+
+/*　パディングをサイズ内側にする処理　*/
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*ーーーーーーーーーーー*/
+/*この下から記述*/
+
+/*背景の処理*/
+body {
+  display: inherit;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 24px;
+}
+.main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(to right, #ff0080, #7100d48a);
+}
+
+.imformation img {
+  text-align: center;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ttl {
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.explain {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.detail {
+  margin-top: 20px;
+}
+/* The blue button of "Further Imformation" */
+.container_service .service a {
+  position: relative;
+  top: 20px;
+  bottom: 100px;
+  background: #3884a2;
+  color: #ffffff;
+  padding: 10px 15px 10px;
+  border-radius: 100px;
+  margin-bottom: 100px;
+}
